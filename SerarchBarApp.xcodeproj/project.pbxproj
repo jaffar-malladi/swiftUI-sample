@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD3E4A6E28926499005D38C2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4A6D28926499005D38C2 /* ImageLoader.swift */; };
 		BD3E4A7028926C5B005D38C2 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4A6F28926C5B005D38C2 /* URLImage.swift */; };
+		BD3E4A7228929204005D38C2 /* RativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4A7128929204005D38C2 /* RativeView.swift */; };
 		BD41147E288FF92400596630 /* SerarchBarAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41147D288FF92400596630 /* SerarchBarAppApp.swift */; };
 		BD411480288FF92400596630 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41147F288FF92400596630 /* ContentView.swift */; };
 		BD411482288FF92500596630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD411481288FF92500596630 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		BD3E4A6D28926499005D38C2 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		BD3E4A6F28926C5B005D38C2 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		BD3E4A7128929204005D38C2 /* RativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RativeView.swift; sourceTree = "<group>"; };
 		BD41147A288FF92400596630 /* SerarchBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerarchBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD41147D288FF92400596630 /* SerarchBarAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerarchBarAppApp.swift; sourceTree = "<group>"; };
 		BD41147F288FF92400596630 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				BD41147D288FF92400596630 /* SerarchBarAppApp.swift */,
 				BD41147F288FF92400596630 /* ContentView.swift */,
+				BD3E4A7128929204005D38C2 /* RativeView.swift */,
 				BD411481288FF92500596630 /* Assets.xcassets */,
 				BD411483288FF92500596630 /* Preview Content */,
 				BD41148B288FFC7100596630 /* SearchBar.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD411480288FF92400596630 /* ContentView.swift in Sources */,
+				BD3E4A7228929204005D38C2 /* RativeView.swift in Sources */,
 				BD41147E288FF92400596630 /* SerarchBarAppApp.swift in Sources */,
 				BD3E4A6E28926499005D38C2 /* ImageLoader.swift in Sources */,
 				BD3E4A7028926C5B005D38C2 /* URLImage.swift in Sources */,

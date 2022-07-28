@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var searchTerm: String = ""
+    @State private var rating: Int?
     let names = ["Jaffar","Malladi","chandu","Nambiar"]
     let posters = [
         "https://cdn.pixabay.com/photo/2018/04/26/16/39/beach-3352363_1280.jpg",
@@ -31,6 +32,12 @@ struct ContentView: View {
         List(self.posters, id: \.self) { poster in
             URLImage(url: poster)
                 .aspectRatio(contentMode: .fit)
+        }
+        
+        VStack {
+            RativeView(rating: $rating)
+            Text(rating != nil ? "Your rating: \(rating!)" : "")
+
         }
     
     }
