@@ -35,7 +35,7 @@ struct ContentView: View {
         }
         
         VStack {
-            RativeView(rating: $rating)
+            RatingView(rating: $rating)
             Text(rating != nil ? "Your rating: \(rating!)" : "")
 
         }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RativeView: View {
+struct RatingView: View {
     
     @Binding var rating: Int?
     private func starType(index: Int) -> String {
@@ -32,6 +32,6 @@ struct RativeView: View {
 
 struct RativeView_Previews: PreviewProvider {
     static var previews: some View {
-        RativeView(rating: .constant(4))
+        RatingView(rating: .constant(4))
     }
 }
