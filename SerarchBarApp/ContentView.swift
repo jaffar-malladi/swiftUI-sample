@@ -19,26 +19,28 @@ struct ContentView: View {
         
     ]
     var body: some View {
-        List {
-            
-            SearchBar(text: $searchTerm)
-            ForEach(self.names.filter({
-                self.searchTerm.isEmpty ? true: $0.localizedCaseInsensitiveContains(self.searchTerm)
-            }), id: \.self) { name in
-                Text(name)
-            }
-        }
+//        List {
+//
+//            SearchBar(text: $searchTerm)
+//            ForEach(self.names.filter({
+//                self.searchTerm.isEmpty ? true: $0.localizedCaseInsensitiveContains(self.searchTerm)
+//            }), id: \.self) { name in
+//                Text(name)
+//            }
+//        }
+//
+//        List(self.posters, id: \.self) { poster in
+//            URLImage(url: poster)
+//                .aspectRatio(contentMode: .fit)
+//        }
+//
+//        VStack {
+//            RatingView(rating: $rating)
+//            Text(rating != nil ? "Your rating: \(rating!)" : "")
+//
+//        }
         
-        List(self.posters, id: \.self) { poster in
-            URLImage(url: poster)
-                .aspectRatio(contentMode: .fit)
-        }
-        
-        VStack {
-            RatingView(rating: $rating)
-            Text(rating != nil ? "Your rating: \(rating!)" : "")
-
-        }
+        ContentViewLineChart()
     
     }
 }
