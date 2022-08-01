@@ -22,7 +22,7 @@ private func getHistoricalStock() -> [Stock] {
 }
 
 private func getYearlyLabels() -> [String] {
-    return (2015...2021).map {  String($0)}
+    return (2000...2021).map {  String($0)}
 }
 
 struct ContentViewLineChart: View {
@@ -32,13 +32,18 @@ struct ContentViewLineChart: View {
     var body: some View {
         
         NavigationView {
+            
             VStack {
-                LineChartView(values: price, labels: labels)
-                    .foregroundColor(.white)
-            }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.green)
-                .foregroundColor(.white)
-                .navigationTitle("Stocks")
+                BarChartView(values: price, labels: labels)
+            }
+            .navigationTitle("Stocks")
+//            VStack {
+//                LineChartView(values: price, labels: labels)
+//                    .foregroundColor(.white)
+//            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+//                .background(Color.green)
+//                .foregroundColor(.white)
+//                .navigationTitle("Stocks")
         }
     }
 }
